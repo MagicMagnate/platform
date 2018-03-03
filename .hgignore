@@ -4,6 +4,7 @@ cover/**
 deps/**
 doc/**
 .fetch/**
+.git/**
 erl_crash.dump
 *.ez
 *.beam
