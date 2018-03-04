@@ -16,8 +16,8 @@ use Mix.Config
 config :platform, PlatformWeb.Endpoint,
   load_from_system_env: true,
   url: [host: "platform-magicmagnate.herokuapp.com", port: 80],
-  cache_static_manifest: "priv/static/cache_manifest.json",
-  secret_key_base : System.get_env("SECRET_KEY_BASE")
+  cache_static_manifest: "priv/static/cache_manifest.json",  
+  secret_key_base: System.get_env("SECRET_KEY_BASE")
 config :platform ,Platform.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
